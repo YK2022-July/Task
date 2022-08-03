@@ -1,0 +1,175 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h3{
+  font-size: 16.5px;
+  padding: 15px 10px 5px;
+}
+
+p{
+  font-size: 12.5px;
+  padding: 0 10px 5px 10px;
+}
+
+header{
+  width: 100%;
+  height: 50px;
+  background-color: #FF9A4B;
+}
+
+main{
+  width: 100%;
+}
+
+
+.main-contents{
+  width: 960px;
+  padding: 50px 0;
+  margin: auto;
+  display: flex;
+}
+
+.main-box{
+  width: 300px;
+  background-color: #EEEEEE;
+  margin-right: 30px;
+}
+
+.main-box:last-child{
+  margin-right: 0;
+}
+
+.main-image1{
+  width: 280px;
+  height: 150px;
+  background-image: url(img/flow01.png);
+  background-size: cover;
+  background-position: bottom;
+  margin: 10px 10px 0 10px;
+}
+
+.main-image2{
+  width: 280px;
+  height: 150px;
+  background-image: url(img/flow02.png);
+  background-size: cover;
+  background-position: bottom;
+  margin: 10px 10px 0 10px;
+}
+
+.main-image3{
+  width: 280px;
+  height: 150px;
+  background-image: url(img/flow03.png);
+  background-size: cover;
+  background-position: bottom;
+  margin: 10px 10px 0 10px;
+}
+
+.main-section{
+  width: 100%;
+  margin: 0 10px;
+
+}
+
+.main-flow{
+  width: 45px;
+  height: 30px;
+  background-color: #FF9A4B;
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 100px;
+}
+
+footer{
+  width: 100%;
+  height: 50px;
+  background-color: #AAAAAA;
+}
+
+/*課題問題：横並びになっているboxを768px以下で縦並びにする*/
+@media screen and (max-width: 768px) {
+
+  h3{
+   height: 45px;
+   position: relative;
+   top: 10px;
+  }
+
+ p{
+   height: 60px;
+   position: relative;
+   top: 10px;
+ }
+
+ header{
+   width: 100%;
+ }
+
+  /*main-contentsのFlexboxを解除する*/
+ .main-contents{
+   width: 100%;
+   height: 100%;
+   display: inline-block;
+ }
+
+ .main-box{
+   width: 90%;
+   height: 275px;
+   margin: 0 auto 20px;
+ }
+
+ .main-box:last-child{
+   margin: auto;
+ }
+
+  .main-box:nth-child(2) .main-flow{
+   position: absolute;
+   top: 395px;
+ }
+
+ .main-box:nth-child(3) .main-flow{
+   position: absolute;
+   top: 690px;
+ }
+
+ .main-image1{
+   width: 90%;
+   height: 150px;
+   margin: auto;
+   position: relative;
+   top: 10px;
+   background-size: cover;
+   background-position: bottom;
+ }
+
+ .main-image2{
+   width: 90%;
+   height: 150px;
+   margin: auto;
+   position: relative;
+   top: 10px;
+ }
+
+ .main-image3{
+   width: 90%;
+   height: 150px;
+   margin: auto;
+   position: relative;
+   top: 10px;
+ }
+
+ .main-section{
+   width: 90%;
+ }
+
+
+  footer{
+    width: 100%;
+  }
+
+}
